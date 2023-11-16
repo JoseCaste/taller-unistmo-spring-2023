@@ -8,7 +8,7 @@
     </parent>
     <artifactId>web-service</artifactId>
     <name>Archetype - web-service</name>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
