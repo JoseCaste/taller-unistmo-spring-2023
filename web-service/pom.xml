@@ -8,14 +8,10 @@
     </parent>
     <artifactId>web-service</artifactId>
     <name>Archetype - web-service</name>
+    <packaging>war</packaging>
     <url>http://maven.apache.org</url>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
         <dependency>
             <groupId>com.unistmo</groupId>
             <artifactId>dao-conf</artifactId>
@@ -23,4 +19,16 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
