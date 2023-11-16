@@ -8,7 +8,7 @@
     </parent>
     <artifactId>dao-conf</artifactId>
     <name>Archetype - dao-conf</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
